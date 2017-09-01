@@ -13,7 +13,6 @@ set expandtab
 
 set textwidth=79
 set colorcolumn=80
-"set wrap=80
 set hidden " Allow background buffers without saving
 set spell spelllang=en_us
 
@@ -102,10 +101,8 @@ inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal
-"omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal
-"omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
